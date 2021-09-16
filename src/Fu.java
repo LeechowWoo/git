@@ -1,5 +1,5 @@
 public class Fu {
     public void show(){
-        System.out.println("父类被调用");
+        System.out.println("Fu中show()方法被调用");
     }
 }
