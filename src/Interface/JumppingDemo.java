@@ -1,6 +1,9 @@
 package Interface;
 
 public class JumppingDemo {
-    Jumpping j=new Cat();
-    j.jump();
+    public static void main(String[] args) {
+        Jumpping j=new Cat();
+        j.jump();
+    }
+
 }
