@@ -1,8 +1,11 @@
+import java.util.Calendar;
+import java.util.Date;
+
 public class TestProgramm {
     public static void main(String[] args) {
-        Integer i1=Integer.valueOf(100);
-        Integer i2=100;
-        System.out.println(i1);
-        System.out.println(i2);
+        Calendar c=Calendar.getInstance();
+//        System.out.println(c);
+        int i=c.get(Calendar.YEAR);
+        System.out.println(i);
     }
 }
