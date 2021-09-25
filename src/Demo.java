@@ -1,11 +1,11 @@
 public class Demo {
     public static void main(String[] args) {
-        long start=System.currentTimeMillis();
-        for(int i=0;i<10000;i++){
-            System.out.println(i);
+        int[][] dp = new int[11][11];
+        for(int i=0;i<11;i++){
+            for(int j=0;j<11;j++){
+                System.out.println(dp[i][j]);
+            }
         }
-        long end=System.currentTimeMillis();
-        System.out.println("共耗时："+(end-start)+"毫秒");
     }
 }
 
