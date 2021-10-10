@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<h1>注册</h1>
+<!--
+表单 form
+action:表单提交的位置，可以是网站，也可以是一个请求处理地址
+method:post get提交方式
+get方式提交：可以在url中看到我们提交的信息，不安全，高效
+post方式提交：比较安全，且可以传输大文件
+
+value="你好世界"maxlength="8"
+-->
+<form action="第一个网页.html"method="get">
+<!--文本输入框:input type="text"-->
+    <p>名字：<input type="text"name="username"></p>
+<!--密码框：input type="password"-->
+    <p>密码：<input type="password"name="pwd"></p>
+<!--
+单选框标签
+input type="radio"
+value:单选框的值
+name:表示组
+-->
+    <p>性别
+    <input type="radio"value="boy"name="gender">男
+        <input type="radio"value="girl"name="gender">女
+    </p>
+<!--
+多选框
+-->
+    <p>
+        <input type="checkbox"value="sleep"name="hobby">睡觉
+        <input type="checkbox"value="code"name="hobby">敲代码
+        <input type="checkbox"value="chat"name="hobby">聊天
+        <input type="checkbox"value="game"name="hobby">游戏
+    </p>
+<!--按钮-->
+    <p>按钮：
+        <input type="button"name="btn1"value="点击">
+    </p>
+<!--下拉框-->
+    <p>国家：
+        <select name="列表名称" >
+            <option value="选项的值">中国</option>
+            <option value="选项的值">美国</option>
+            <option value="选项的值"selected>瑞士</option>
+            <option value="选项的值">印度</option>
+        </select>
+    </p>
+    <p>文本域
+        <textarea name="textarea" cols="20" rows="5"></textarea>
+    </p>
+    <p>文件域
+        <input type="file"name="files">
+        <input type="button"value="上传"name="upload">
+    </p>
+<!--邮箱验证-->
+    <p>邮箱
+        <input type="email"name="email">
+    </p>
+    <p>URL
+        <input type="url"name="url">
+    </p>
+    <p>数字
+        <input type="number"name="num"max="100"min="0"step="10">
+    </p>
+    <p>滑块
+        <input type="range"name="volumn"min="0"max="100">
+    </p>
+    <p>搜索
+        <input type="search"name="search">
+    </p>
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+</form>
+
+</body>
+</html>
