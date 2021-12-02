@@ -17,10 +17,12 @@ public class Test01 {
             byte[]bytes={97,98,99,100};
             fos.write(bytes);
             fos.write(bytes,0,2);
-            fos=new FileOutputStream("myfile",true);//append参数为true时，会在文件的末尾添加，而不是清空原文件再写
+            /*fos=new FileOutputStream("myfile",true);//append参数为true时，会在文件的末尾添加，而不是清空原文件再写
             byte[]bytes1={101,102,103,104};
             fos.write(bytes1);
             //写完之后一定要刷新
+
+             */
             fos.flush();
         } catch (IOException e) {
             e.printStackTrace();
